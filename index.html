@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Adnan Kamal</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Adnan Kamal</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I am</p>
+      <h1 class="title">Adnan Kamal</h1>
+      <p class="section__text__p2">Mobile Application Developer, Frontend Engineer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/adnan_cv.pdf')">
+          Download CV
+        </button>
+
+        <a href="#contact">
+
+          <button class="btn btn-color-1">
+            Contact Info
+          </button>
+        </a>
+
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/md-adnan-kamal/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/priyo105'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Details on me</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>5+ years <br />Software Engineer</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Bsc in Computer Science And Engineering<br />M.Sc. in Data Science</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Throughout my 5-year career as a software engineer, I've played a pivotal role in Mobile Application
+            Development, specializing in React Native for 4 of those years. My contributions consistently yielded
+            exceptional results, driving success in numerous cross-platform projects.
+
+            With extensive experience in Mobile App Development across three companies, my achievements were underscored
+            by earning the prestigious Employee of the Month award at EkkBaz, a recognition I received three times for
+            my outstanding contributions.
+
+            In addition to my expertise in React Native and Android app development with Java, I bring valuable
+            full-stack proficiency to the table. I am a skilled MERN stack developer, proficient in MongoDB, Express.js,
+            React, and Node.js. This enables me to create holistic, end-to-end solutions that seamlessly integrate
+            front-end and back-end components.
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Take a Look At my </p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Mobile/Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React </h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React Native</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Android </h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Material UI</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development / Database</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>NODE JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>EXPRESS JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MONGO DB</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MY SQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Laravel</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="details-container">
+        <h2 class="experience-sub-title">Data Science (MS from LSBU)</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Data Analysis</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Tensorflow</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>SQL</h3>
+              <p>Advanced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Python</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Explore My </p>
+    <h1 class="title">Mobile Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" />
+          </div>
+          <h2 class="experience-sub-title project-title">EkkBaz Seller App
+          </h2>
+          <div class="btn-container">
+
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://play.google.com/store/apps/details?id=com.ekkbaz.seller&hl=en&gl=US'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" width="250" height="550" />
+          </div>
+          <h2 class="experience-sub-title project-title">Wellbeing Pharmacy</h2>
+          <div class="btn-container">
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button> -->
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://play.google.com/store/search?q=wellbeing+pharmacy&c=apps'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" width="250" height="550" />
+          </div>
+          <h2 class="experience-sub-title project-title">Ecom Shop</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/priyo105/ecom'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.youtube.com/watch?v=lX0_LauACuc'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+
+
+
+  <section id="projects">
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project4.png" alt="Project 1" width="250" height="550" />
+          </div>
+          <h2 class="experience-sub-title project-title">Active Life
+          </h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/priyo105/ActiveLife'">
+              Github
+            </button>
+
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.youtube.com/watch?v=dbgsgyHw4Gg'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project5.png" alt="Project 2" width="250" height="550" />
+          </div>
+          <h2 class="experience-sub-title project-title">Speedy Express</h2>
+          <div class="btn-container">
+            <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button> -->
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://play.google.com/store/apps/details?id=com.SpeedyEx&referrer=utm_source%3Dapps.facebook.com%26utm_campaign%3Dfb4a%26utm_content%3D%257B%2522app%2522%253A0%252C%2522t%2522%253A1696897259%252C%2522source%2522%253Anull%257D'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+
+
+
+
+  <section id="projects">
+    <p class="section__text__p1">Explore My </p>
+    <h1 class="title">Full-Stack Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+
+        <div class="experience-details-container">
+          <!-- <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img src="./assets/project6.png" alt="Project 1" width="40%" height="auto" />
+              </div>
+              <h2 class="experience-sub-title project-title">Edu-Cloud AI (Dissertation Project)
+              </h2>
+              <div class="btn-container">
+           
+                <button class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://play.google.com/store/apps/details?id=com.ekkbaz.seller&hl=en&gl=US'">
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            
+     
+    
+            
+          </div> -->
+
+
+
+
+        </div>
+      </div>
+      <div class="about-containers">
+        <!-- <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project6.png" alt="Project 1" width="30%" height="auto" />
+          </div>
+          <h2 class="experience-sub-title project-title">Edu-Cloud AI (Dissertation Project)
+          </h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://play.google.com/store/apps/details?id=com.ekkbaz.seller&hl=en&gl=US'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn">
+              Live Soon
+            </button>
+
+          </div>
+        </div> -->
+
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <!-- <img src="./assets/project6.png" alt="Project 1" width="70%" height="600" /> -->
+          </div>
+          <h2 class="experience-sub-title project-title">Edu-Cloud AI (Dissertation Project)
+          </h2>
+
+            <h1>Techlogies Used </h1>
+            <ul style="margin-bottom: 50px; list-style-type: none;">
+              <li> React JS</li>
+              <li>Material UI</li>
+              <li>GPT-3 API</li>
+              <li> 
+                <img src="assets/react.png" height="50" width="50" style="margin-top: 3rem;" > </img>
+                <img src="assets/gpt.png" height="50" width="50" style="margin-top: 3rem;" > </img> 
+                <img src="assets/mui.png" height="50" width="50" style="margin-top: 3rem;" > </img> 
+
+              </li>
+            </ul>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/priyo105/dissertation_educloud_AI'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn">
+              Live Soon
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="about-containers">
+      <!-- <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project6.png" alt="Project 1" width="30%" height="auto" />
+        </div>
+        <h2 class="experience-sub-title project-title">Edu-Cloud AI (Dissertation Project)
+        </h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://play.google.com/store/apps/details?id=com.ekkbaz.seller&hl=en&gl=US'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn">
+            Live Soon
+          </button>
+
+        </div>
+      </div> -->
+
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <!-- <img src="./assets/project6.png" alt="Project 1" width="70%" height="600" /> -->
+        </div>
+        <h2 class="experience-sub-title project-title">Pic-Tik (Social Media)
+        </h2>
+
+          <h1>Techlogies Used </h1>
+          <ul style="margin-bottom: 50px; list-style-type: none;">
+            <li> Node JS</li>
+            <li> Express JS</li>
+            <li> Mongo DB</li>
+
+            <li> React JS</li>
+            <li>Material UI</li>
+            <li>Redux Toolkit</li>
+            <li> 
+              <img src="assets/node-js.png" height="50" width="50" style="margin-top: 3rem;" > </img>
+              <img src="assets/mongo.png" height="50" width="50" style="margin-top: 3rem;" > </img> 
+              <img src="assets/react.png" height="50" width="50" style="margin-top: 3rem;" > </img>
+              <img src="assets/gpt.png" height="50" width="50" style="margin-top: 3rem;" > </img> 
+              <img src="assets/mui.png" height="50" width="50" style="margin-top: 3rem;" > </img> 
+              
+
+            </li>
+          </ul>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/priyo105/social_media_mern'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn">
+            Live Soon
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+</section>
+
+  </section>
+
+
+
+
+  
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com">adnankamal972@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Adnan . All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
